@@ -4,3 +4,6 @@ I've created a small project which tellus us which key is pressed. It has two op
 
 - `JavaScript`
 - `CSS`
+## 📸 - Demo Video
+
+[DemoVideo.webm](https://github.com/SamraddhiDevX/KeyLogger/c18c171a-3ea8-4e7a-a309-ad65746db7e4.webm)
