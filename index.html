@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Logger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <div>
+        <h1 class="div1" >Key Logger</h1>
+        <div class="btn"> 
+            <button id="btn1" >Start Logging</button>
+            <button id="btn2">Stop Logging</button>
+        </div>
+        <div class="div2">
+            <div class="div3"></div>
+            <div class="div4"></div>
+        </div>
+    </div>
+
+    <script>
+
+        let b1=document.getElementById('btn1');
+        let b2=document.getElementById('btn2');
+        let d3= document.getElementsByClassName('div3')[0];
+        let d4= document.getElementsByClassName('div4')[0];
+       
+     b1.addEventListener('click', showukey);
+     function showukey(){
+        b1.addEventListener('keydown',function(event){
+       d3.innerHTML="The pressed key is "+ event.key;
+       d4.innerHTML="The key "+ event.key + " is down";
+     });
+     b1.addEventListener('keyup', function(event){
+        d4.innerHTML="The key "+ event.key+ " is up";
+     })
+    }
+    b2.addEventListener('click',removekey);
+    function removekey(){
+      
+        d3.innerHTML="";
+        d4.innerHTML="";
+    }
+    
+    </script>
+</body>
+</html>
